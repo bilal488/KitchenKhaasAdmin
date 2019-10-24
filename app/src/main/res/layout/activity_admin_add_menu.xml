@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddMenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/select_menu_image"
+                android:layout_width="320dp"
+                android:layout_height="460dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/select_image" />
+
+            <EditText
+                android:id="@+id/menu_name"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_menu_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Menu Name"
+                android:inputType="text"
+                android:maxLength="20"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/menu_price"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Price (per head)"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/add_new_menu"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_price"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="Add Menu"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

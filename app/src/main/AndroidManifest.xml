@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.technohem.kitchenkhaasadmin">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_admin"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_admin"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".KitchenKhaasAdmin">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GalleryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AdminUserMenusActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AdminNewOrdersActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AdminAddMenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddGalleryImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".HomeActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>
